@@ -25,3 +25,4 @@ youtube-dl
 pexpect
 wget
 speedtest-cli>=2.0.2
+logger
