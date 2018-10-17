@@ -1,0 +1,14 @@
+# ForkBorg-Reborn
+A Userbot based on Telethon
+
+
+RUN THE BOT BY 
+
+*python3 -m app*
+
+
+YOU MIGHT SEE IT GIVING SOME ERROR AT LINE 211 AND 233 JUST IGNORE IT!!!!(WILL FIX IT SOON)
+SET THE VALUES IN CONFIG.PY 
+
+
+ENJOY!!
