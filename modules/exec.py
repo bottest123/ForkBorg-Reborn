@@ -6,7 +6,7 @@ import subprocess
 from telethon.errors import MessageEmptyError, MessageTooLongError
 
 
-@bot.on(events.NewMessage(pattern=r"\.exec (.*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.execute (.*)", outgoing=True))
 async def _(event):
     if event.fwd_from:
         return
