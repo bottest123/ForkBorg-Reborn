@@ -7,7 +7,7 @@ from datetime import datetime
 import requests
 import mimetypes
 
-current_date_time = os.environ.get("TMP_DOWNLOAD_DIRECTORY", "./../DOWNLOADS/")
+current_date_time = os.environ.get("TMP_DOWNLOAD_DIRECTORY", "./downloads/")
 
 
 @bot.on(events.NewMessage(pattern=r".telegraph media", outgoing=True))
