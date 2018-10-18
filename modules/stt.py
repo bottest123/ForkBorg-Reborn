@@ -3,7 +3,7 @@ import os
 from datetime import datetime
 
 
-current_date_time = os.environ.get("TMP_DOWNLOAD_DIRECTORY", "./../DOWNLOADS/")
+current_date_time = os.environ.get("TMP_DOWNLOAD_DIRECTORY", "./downloads/")
 
 @bot.on(events.NewMessage(pattern=r"\.stt (.*)", outgoing=True))
 async def _(event):
