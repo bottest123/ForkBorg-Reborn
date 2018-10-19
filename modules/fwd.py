@@ -7,7 +7,7 @@ async def _(event):
         return
     if PRIVATE_CHANNEL_BOT_API_ID is not None:
         try:
-            e = await borg.get_entity(int(PRIVATE_CHANNEL_BOT_API_ID))
+            e = await bot.get_entity(int(PRIVATE_CHANNEL_BOT_API_ID))
         except e:
             await event.edit(str(e))
             return None
