@@ -1,7 +1,5 @@
-from telethon import events
 import os
 
-PRIVATE_CHANNEL_BOT_API_ID = os.environ.get("PRIVATE_CHANNEL_BOT_API_ID", None)
 
 @bot.on(events.NewMessage(pattern=r"\.fwd", outgoing=True))
 async def _(event):
