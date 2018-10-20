@@ -13,18 +13,24 @@ async def _(event):
     sample_url = "https://api.screenshotlayer.com/api/capture?access_key={}&url={}"
     input_str = event.pattern_match.group(1)
     response_api = requests.get(sample_url.format(SCREEN_SHOT_LAYER_ACCESS_KEY, input_str), stream=True)
-    temp_file_name = "screenshotlayer.jpg"
-    with open(temp_file_name, "wb") as fd:
-        for chunk in response_api.iter_content(chunk_size=128):
-            fd.write(chunk)
-    try:
-        await bot.send_file(
-            event.chat_id,
-            temp_file_name,
-            caption=input_str,
-            reply_to=event.message.reply_to_msg_id
-        )
-        await event.delete()
-    except:
+    # https://stackoverflow.com/a/23718458/4723940
+    contentType = response_api.headers['content-type']
+    if "image" in contentType:
+        temp_file_name = "screenshotlayer.jpg"
+        with open(temp_file_name, "wb") as fd:
+            for chunk in response_api.iter_content(chunk_size=128):
+                fd.write(chunk)
+        try:
+            await bot.send_file(
+                event.chat_id,
+                temp_file_name,
+                caption=input_str,
+                force_document=True,
+                reply_to=event.message.reply_to_msg_id
+            )
+            await event.delete()
+        except:
+            await event.edit(response_api.text)
+        os.remove(temp_file_name)
+    else:
         await event.edit(response_api.text)
-    os.remove(temp_file_name)
