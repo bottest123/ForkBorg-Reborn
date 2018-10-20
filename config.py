@@ -4,6 +4,7 @@ PRIVATE_CHANNEL_BOT_API_ID="USE .get_id to get from channel"              #For u
 PRIVATE_GROUP_BOT_API_ID="use .get_id "                #For using .fwd command to forward a message directly to a group or channel
 SCREEN_SHOT_LAYER_ACCESS_KEY="get from screenshot layer website google it "           #For using .screencapture commad...please refer readme for getting the key
 OPEN_WEATHER_MAP_APPID="get it from openweather site"        #FOR USING .weather Command
+short_name="input your name here for telegraph"
 IBM_WATSON_CRED_USERNAME="INSERT API USERNAME" #FOR IBM WATSON AUDIO USAGE
 IBM_WATSON_CRED_PASSWORD="INSERT API PASSWORD"        #For IBM WATSON 
 LOGGER_GROUP="CHAT ID (-ve) OF THE LOG GROUP"
