@@ -5,7 +5,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 
 download_directory = os.environ.get("TMP_DOWNLOAD_DIRECTORY", "./downloads/")
-font_file_to_use = "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf"
+font_file_to_use = "./fonts/DejaVuSansMono.ttf"
 
 
 def progress(current, total):
