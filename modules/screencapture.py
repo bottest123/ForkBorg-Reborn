@@ -25,7 +25,6 @@ async def _(event):
                 event.chat_id,
                 temp_file_name,
                 caption=input_str,
-                force_document=True,
                 reply_to=event.message.reply_to_msg_id
             )
             await event.delete()
