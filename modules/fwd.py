@@ -13,12 +13,12 @@ async def _(event):
             return None
         re_message = await event.get_reply_message()
         # https://t.me/telethonofftopic/78166
-        fwd_message = await borg.forward_messages(
+        fwd_message = await bot.forward_messages(
             e,
             re_message,
             silent=True
         )
-        await borg.forward_messages(
+        await bot.forward_messages(
             event.chat_id,
             fwd_message
         )
