@@ -14,7 +14,7 @@ async def permitpm(e):
        for i in all_rows:
            PERMITTED_USERS.append(i[0])
        if not int(e.chat_id) in PERMITTED_USERS:
-           await e.reply("`My Master hasn't permitted you to PM. Please tag him in a group you found him common. I will report spam if I find more PMs.`")
+           await e.reply("`My Master hasn't permitted you to PM. Please tag him in a group you found him common. I will report spam if I find more PMs. Max Count = 5 After that you get BLOCKED!!!`")
            if e.chat_id not in COUNT_PM:
               COUNT_PM.update({e.chat_id:1})
            else:
