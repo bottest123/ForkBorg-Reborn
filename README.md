@@ -7,6 +7,8 @@ INSTALLING REQUIREMENTS
 
 `pip install --no-index -f http://effbot.org/downloads/ -U PIL --trusted-host effbot.org`
 
+*sudo apt install screenfetch*
+
 RUN THE BOT BY 
 
 <b>python3 -m app</b>
