@@ -115,19 +115,19 @@ async def killdabot(e):
 @bot.on(events.NewMessage(outgoing=True,pattern='.support'))
 @bot.on(events.MessageEdited(outgoing=True,pattern='.support'))
 async def killdabot(e):
-        await e.edit("Report bugs here: @userbot_support")
-@bot.on(events.NewMessage(outgoing=True,pattern='.help'))
-@bot.on(events.MessageEdited(outgoing=True,pattern='.help'))
+        await e.edit("Report bugs to my master: @hackedyouagain")
+@bot.on(events.NewMessage(outgoing=True,pattern='.helpme'))
+@bot.on(events.MessageEdited(outgoing=True,pattern='.helpme'))
 async def readme(e):
-        await e.edit('https://github.com/baalajimaestro/Telegram-UserBot/blob/master/README.md')
+        await e.edit('https://github.com/bottest123/ForkBorg-Reborn/blob/master/README.md')
 @bot.on(events.NewMessage(outgoing=True,pattern='.repo'))
 @bot.on(events.MessageEdited(outgoing=True,pattern='.repo'))
 async def repo_is_here(e):
-        await e.edit('https://github.com/baalajimaestro/Telegram-UserBot/')
+        await e.edit('https://github.com/bottest123/ForkBorg-Reborn/')
 @bot.on(events.NewMessage(outgoing=True,pattern='.supportchannel'))
 @bot.on(events.MessageEdited(outgoing=True,pattern='.supportchannel'))
 async def support_channel(e):
-        await e.edit('t.me/maestro_userbot_channel')
+        await e.edit('t.me/hackersinhere')
 @bot.on(events.NewMessage(outgoing=True,pattern='.sysdetails'))
 @bot.on(events.MessageEdited(outgoing=True,pattern='.sysdetails'))
 async def sysdetails(e):
@@ -136,4 +136,4 @@ async def sysdetails(e):
 @bot.on(events.NewMessage(outgoing=True,pattern='.botversion'))
 @bot.on(events.MessageEdited(outgoing=True,pattern='.botversion'))
 async def bot_ver(e):
-	await e.edit('`UserBot Version: Modular r1.03`')
+	await e.edit('`UserBot Version: Modular r2.0`')
