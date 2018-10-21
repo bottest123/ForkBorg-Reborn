@@ -10,7 +10,7 @@ async def imdb(e):
     final_name = '+'.join(remove_space)
     page = requests.get("https://www.imdb.com/find?ref_=nv_sr_fn&q="+final_name+"&s=all")
     lnk = str(page.status_code)
-    soup = bs4.BeautifulSoup(page.content,'lxml')
+    soup = bs4.BeautifulSoup(page.content,'lxml', from_encoding='utf-8')
     results = soup.findAll("td","result_text")
     mov_title = results[0].text
     mov_link = "http://www.imdb.com/"+results[0].a['href'] 
