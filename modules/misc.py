@@ -2,6 +2,7 @@ import hastebin
 import pybase64
 import random,re,os,signal
 import subprocess
+from random import randint
 @bot.on(events.NewMessage(outgoing=True,pattern='.pip (.+)'))
 @bot.on(events.MessageEdited(outgoing=True,pattern='.pip (.+)'))
 async def pipcheck(e):
