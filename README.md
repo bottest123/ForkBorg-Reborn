@@ -1,3 +1,5 @@
+<a href="https://codebeat.co/projects/github-com-bottest123-forkborg-reborn-master"><img alt="codebeat badge" src="https://codebeat.co/badges/e77ee54d-34fd-4042-b227-b875daf65b44" /></a>
+
 # ForkBorg-Reborn
 A Userbot based on Telethon
 
